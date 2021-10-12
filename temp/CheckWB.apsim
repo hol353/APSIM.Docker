@@ -1,0 +1,477 @@
+<folder version="37" creator="Apsim 7.10-r4191" name="Simulations">
+  <simulation name="Simulation">
+    <clock>
+      <start_date type="date" description="Enter the start date of the simulation">01/01/2000</start_date>
+      <end_date type="date" description="Enter the end date of the simulation">31/01/2000</end_date>
+    </clock>
+    <metfile name="met">
+      <filename name="filename" input="yes">C:\Users\snowv\OneDrive - AgResearch\Desktop\Temp\SWIM\NoRainEvap.met</filename>
+    </metfile>
+    <summaryfile />
+    <area name="Paddock">
+      <micromet name="Micromet">
+        <soilalbedo type="text" description="soilalbedo">0.23</soilalbedo>
+        <a_interception type="text" description="a_interception">0</a_interception>
+        <b_interception type="text" description="b_interception">0</b_interception>
+        <c_interception type="text" description="c_interception">0</c_interception>
+        <d_interception type="text" description="d_interception">0</d_interception>
+      </micromet>
+      <fertiliser name="Fertiliser" />
+      <irrigation name="Irrigation">
+        <automatic_irrigation type="list" listvalues="on,off" description="Automatic irrigation">off</automatic_irrigation>
+        <asw_depth type="text" description="Depth to which ASW is calculated. (mm)">600</asw_depth>
+        <crit_fr_asw type="text" description="Fraction of ASW below which irrigation is applied (0-1.0)">0.5</crit_fr_asw>
+        <irrigation_efficiency type="text" description="Efficiency of the irrigation. (0-1.0)">1</irrigation_efficiency>
+        <irrigation_allocation type="list" listvalues="on,off" description="Allocation limits">off</irrigation_allocation>
+        <allocation type="text" description="Allocation in mm">0</allocation>
+        <default_no3_conc type="text" description="Nitrate concentration (ppm N)">0</default_no3_conc>
+        <default_nh4_conc type="text" description="Ammonium concentration (ppm N)">0</default_nh4_conc>
+        <default_cl_conc type="text" description="Chloride concentration (ppm Cl)">0</default_cl_conc>
+      </irrigation>
+      <surfaceom name="SurfaceOrganicMatter">
+        <PoolName type="text" description="Organic Matter pool name">AgPasture</PoolName>
+        <type type="list" listvalues="bambatsi,barley,base_type,broccoli,camaldulensis,canola,centro,chickpea,chikenmanure_base,cm,cmA,cmB,constants,cotton,cowpea,danthonia,fababean,fieldpea,fym,gbean,globulus,goatmanure,grandis,grass,horsegram,inert,lablab,lentil,lucerne,lupin,maize,manB,manure,medic,millet,mucuna,nativepasture,navybean,oats,orobanche,peanut,pigeonpea,potato,rice,sorghum,soybean,stylo,sugar,sunflower,sweetcorn,sweetsorghum,tillage,tithonia,vetch,weed,wheat" description="Organic Matter type">grass</type>
+        <mass type="text" description="Initial surface residue (kg/ha)">1000</mass>
+        <cnr type="text" description="C:N ratio of initial residue">15</cnr>
+        <cpr type="text" description="C:P ratio of initial residue (optional)">
+        </cpr>
+        <standing_fraction type="text" description="Fraction of residue standing">0</standing_fraction>
+      </surfaceom>
+      <Soil name="SWIMSoil">
+        <RecordNumber>0</RecordNumber>
+        <Latitude>0</Latitude>
+        <Longitude>0</Longitude>
+        <YearOfSampling>0</YearOfSampling>
+        <Water>
+          <Thickness>
+            <double>60</double>
+            <double>110</double>
+            <double>140</double>
+            <double>240</double>
+            <double>150</double>
+          </Thickness>
+          <BD>
+            <double>0.865</double>
+            <double>0.865</double>
+            <double>0.865</double>
+            <double>0.865</double>
+            <double>0.865</double>
+          </BD>
+          <AirDry>
+            <double>0.077</double>
+            <double>0.077</double>
+            <double>0.077</double>
+            <double>0.077</double>
+            <double>0.077</double>
+          </AirDry>
+          <LL15>
+            <double>0.231</double>
+            <double>0.231</double>
+            <double>0.231</double>
+            <double>0.231</double>
+            <double>0.231</double>
+          </LL15>
+          <DUL>
+            <double>0.565</double>
+            <double>0.565</double>
+            <double>0.565</double>
+            <double>0.565</double>
+            <double>0.565</double>
+          </DUL>
+          <SAT>
+            <double>0.58</double>
+            <double>0.58</double>
+            <double>0.58</double>
+            <double>0.58</double>
+            <double>0.58</double>
+          </SAT>
+          <KS>
+            <double>216</double>
+            <double>216</double>
+            <double>216</double>
+            <double>216</double>
+            <double>216</double>
+          </KS>
+        </Water>
+        <SoilOrganicMatter>
+          <RootCN>40</RootCN>
+          <RootWt>800</RootWt>
+          <SoilCN>12.5</SoilCN>
+          <EnrACoeff>7.4</EnrACoeff>
+          <EnrBCoeff>0.2</EnrBCoeff>
+          <Thickness>
+            <double>60</double>
+            <double>110</double>
+            <double>140</double>
+            <double>240</double>
+            <double>150</double>
+          </Thickness>
+          <OC>
+            <double>8.2</double>
+            <double>5.5</double>
+            <double>3.3</double>
+            <double>1.7</double>
+            <double>1.7</double>
+          </OC>
+          <FBiom>
+            <double>0.08</double>
+            <double>0.02</double>
+            <double>0.015</double>
+            <double>0.01</double>
+            <double>0.01</double>
+          </FBiom>
+          <FInert>
+            <double>0.58</double>
+            <double>0.7</double>
+            <double>0.77</double>
+            <double>0.9</double>
+            <double>0.99</double>
+          </FInert>
+          <OCUnits>Total</OCUnits>
+        </SoilOrganicMatter>
+        <Swim>
+          <Salb>0.13</Salb>
+          <CN2Bare>50</CN2Bare>
+          <CNRed>20</CNRed>
+          <CNCov>0.8</CNCov>
+          <KDul>1</KDul>
+          <PSIDul>-100</PSIDul>
+          <VC>true</VC>
+          <DTmin>0</DTmin>
+          <DTmax>1440</DTmax>
+          <MaxWaterIncrement>10</MaxWaterIncrement>
+          <SpaceWeightingFactor>0</SpaceWeightingFactor>
+          <SoluteSpaceWeightingFactor>1</SoluteSpaceWeightingFactor>
+          <Diagnostics>false</Diagnostics>
+          <SwimSoluteParameters>
+            <Dis>15</Dis>
+            <Disp>1</Disp>
+            <A>1</A>
+            <DTHC>0</DTHC>
+            <DTHP>1</DTHP>
+            <WaterTableCl>0</WaterTableCl>
+            <WaterTableNO3>0</WaterTableNO3>
+            <WaterTableNH4>0</WaterTableNH4>
+            <WaterTableUrea>0</WaterTableUrea>
+            <WaterTableTracer>0</WaterTableTracer>
+            <WaterTableMineralisationInhibitor>0</WaterTableMineralisationInhibitor>
+            <WaterTableUreaseInhibitor>0</WaterTableUreaseInhibitor>
+            <WaterTableNitrificationInhibitor>0</WaterTableNitrificationInhibitor>
+            <WaterTableDenitrificationInhibitor>0</WaterTableDenitrificationInhibitor>
+            <Thickness>
+              <double>1000</double>
+              <double>1000</double>
+              <double>1000</double>
+            </Thickness>
+            <NO3Exco>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </NO3Exco>
+            <NO3FIP>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+            </NO3FIP>
+            <NH4Exco>
+              <double>100</double>
+              <double>100</double>
+              <double>100</double>
+            </NH4Exco>
+            <NH4FIP>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+            </NH4FIP>
+            <UreaExco>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </UreaExco>
+            <UreaFIP>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+            </UreaFIP>
+            <ClExco>
+              <double>0</double>
+              <double>0</double>
+              <double>0</double>
+            </ClExco>
+            <ClFIP>
+              <double>1</double>
+              <double>1</double>
+              <double>1</double>
+            </ClFIP>
+          </SwimSoluteParameters>
+        </Swim>
+        <Analysis>
+          <Thickness>
+            <double>60</double>
+            <double>110</double>
+            <double>140</double>
+            <double>240</double>
+            <double>150</double>
+          </Thickness>
+          <Texture>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </Texture>
+          <MunsellColour>
+            <string />
+            <string />
+            <string />
+            <string />
+            <string />
+          </MunsellColour>
+          <PH>
+            <double>6.5</double>
+            <double>6.5</double>
+            <double>6.5</double>
+            <double>6.5</double>
+            <double>6.5</double>
+          </PH>
+          <ParticleSizeSand>
+            <double>17.61</double>
+            <double>17.61</double>
+            <double>17.61</double>
+            <double>17.61</double>
+            <double>17.61</double>
+          </ParticleSizeSand>
+          <ParticleSizeSilt>
+            <double>33.77</double>
+            <double>33.77</double>
+            <double>33.77</double>
+            <double>33.77</double>
+            <double>33.77</double>
+          </ParticleSizeSilt>
+          <ParticleSizeClay>
+            <double>48.62</double>
+            <double>48.62</double>
+            <double>48.62</double>
+            <double>48.62</double>
+            <double>48.62</double>
+          </ParticleSizeClay>
+          <PHUnits>Water</PHUnits>
+          <BoronUnits>HotWater</BoronUnits>
+        </Analysis>
+        <InitialWater>
+          <FractionFull>1</FractionFull>
+          <DepthWetSoil>NaN</DepthWetSoil>
+          <PercentMethod>FilledFromTop</PercentMethod>
+        </InitialWater>
+        <Sample name="Initial nitrogen">
+          <Thickness>
+            <double>60</double>
+            <double>110</double>
+            <double>140</double>
+            <double>240</double>
+            <double>150</double>
+          </Thickness>
+          <NO3>
+            <double>6.503</double>
+            <double>2.101</double>
+            <double>2.101</double>
+            <double>1.701</double>
+            <double>1.701</double>
+          </NO3>
+          <NH4>
+            <double>0.599</double>
+            <double>0.1</double>
+            <double>0.1</double>
+            <double>0.1</double>
+            <double>0.1</double>
+          </NH4>
+          <NO3Units>ppm</NO3Units>
+          <NH4Units>ppm</NH4Units>
+          <SWUnits>Volumetric</SWUnits>
+          <OCUnits>Total</OCUnits>
+          <PHUnits>Water</PHUnits>
+        </Sample>
+        <LayerStructure>
+          <Thickness>
+            <double>10</double>
+            <double>20</double>
+            <double>30</double>
+            <double>40</double>
+            <double>50</double>
+            <double>50</double>
+            <double>50</double>
+            <double>50</double>
+            <double>100</double>
+            <double>100</double>
+            <double>50</double>
+            <double>50</double>
+            <double>50</double>
+            <double>50</double>
+          </Thickness>
+        </LayerStructure>
+      </Soil>
+      <manager2 name="CalcWatBal">
+        <ui>
+          <dummy type="category" description="Parameters to control the reporting" />
+          <OutputModuleName type="modulename" description="Name of the output component for reporting">Sim</OutputModuleName>
+          <ReportingFreq type="list" listvalues="Daily,TenDaily,Monthly,Annual,OnGrazing,EndSim" description="Frequency of reporting">Daily</ReportingFreq>
+          <FertiliserDate mars_date_format="dd-MMM" type="text" description="For FertiliserDate outputting (summary)">15-Feb</FertiliserDate>
+          <FertYearString mars_date_format="dd-MMM-yyyy" type="text" description="Cant get the dates right (summary)">15-Feb-1979</FertYearString>
+          <FertiliserAmount type="text" description="For FertiliserAmount outputting">100</FertiliserAmount>
+          <Weather type="text" description="Weather location">Ruakura</Weather>
+          <SoilPAWasSet type="text" description="Soil type PAW">PAW067mm</SoilPAWasSet>
+          <SoilFert type="text" description="Soil type fertility">MedFert</SoilFert>
+        </ui>
+        <text>using System;
+using ModelFramework;
+using CSGeneral;
+
+public class Script 
+{      
+   [Link] Simulation simulation;
+   [Link] Clock clock;   
+   [Link()] Paddock paddock;
+   [Link] Swim swim;   
+   [Link] MetFile weather;   
+   [Link] Irrigation irrigation;   
+   //[Link] Swim swim;   
+   
+   //[Param] public string OutputModuleName; 
+   
+   [Output] public double WaterBalanceCumulative;
+   [Output] public double WaterBalanceToday;
+
+   [Output] public double SoilWaterAtInitialisation;
+   [Output] public double SoilWaterYesterday;
+   [Output] public double SoilWaterNow;
+   
+   [Output] public double WaterAddedToday;
+   [Output] public double WaterAddedCumulative;
+   [Output] public double WaterRemovedToday;
+   [Output] public double WaterRemovedCumulative;
+  
+   [Input] private DateTime Today;   
+   
+
+   //SoilWat SoilWat;
+   //Swim SoilWat;
+      
+   [EventHandler] public void OnInitialised()
+   {
+      
+   } // end of Initialisation
+
+
+   [EventHandler] public void OnPrepare()
+   {
+     
+      if (clock.is_start_simulation)
+      {
+         SoilWaterAtInitialisation = swim.pond;
+         for (int i = 0; i &lt; swim.sw_dep.Length; i++)
+            SoilWaterAtInitialisation += swim.sw_dep[i];
+
+         SoilWaterYesterday = SoilWaterAtInitialisation;		// for initialisation only
+         WaterAddedCumulative = 0.0;
+         WaterRemovedCumulative = 0.0;
+         SoilWaterNow = 0.0;
+      }
+      else
+      {
+         SoilWaterYesterday = SoilWaterNow;		// this was calculated at reporting yesterday
+         WaterAddedToday = 0.0;
+         WaterRemovedToday = 0.0;
+      }
+   } // this is the end of Prepare
+
+
+   [EventHandler] public void OnPost()
+   {
+      SoilWaterNow = swim.pond;
+      for (int i = 0; i &lt; swim.sw_dep.Length; i++)
+         SoilWaterNow += swim.sw_dep[i];
+
+      WaterAddedToday = weather.Rain + irrigation.irrigation;   // Can there be runon? Probably not but this will throw an error if that ever happens
+      WaterAddedCumulative += WaterAddedToday;
+      WaterRemovedToday = swim.drain + swim.es + swim.runoff; // Need to add subsurface drainage here
+      WaterRemovedCumulative += WaterRemovedToday;
+
+      WaterBalanceToday = WaterAddedToday - WaterRemovedToday - (SoilWaterNow - SoilWaterYesterday);
+      WaterBalanceCumulative = WaterAddedCumulative - WaterRemovedCumulative - (SoilWaterNow - SoilWaterAtInitialisation);
+
+   } // end of Post
+   
+
+}
+</text>
+      </manager2>
+      <outputfile>
+        <filename output="yes">Simulation.out</filename>
+        <title>Simulation</title>
+        <variables name="Variables">
+          <variable>dd/mmm/yyyy as Date</variable>
+          <variable>WaterBalanceCumulative</variable>
+          <variable>WaterBalanceToday</variable>
+          <variable>sw_dep()</variable>
+          <variable>drain</variable>
+          <variable>es</variable>
+        </variables>
+        <events name="Reporting Frequency">
+          <event>end_day</event>
+        </events>
+        <Graph name="WaterBalance">
+          <Format>AAEAAAD/////AQAAAAAAAAAMAgAAAFJUZWVDaGFydCwgVmVyc2lvbj0yLjAuMjMwNi4yNjIzMiwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj05YzgxMjYyNzZjNzdiZGI3DAMAAABXU3lzdGVtLldpbmRvd3MuRm9ybXMsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5DAQAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQEAAAAVU3RlZW1hLlRlZUNoYXJ0LkNoYXJ0DgEAAAYuV2lkdGgHLkhlaWdodA4uWm9vbS5BbmltYXRlZBMuWm9vbS5BbmltYXRlZFN0ZXBzFC5QYW5uaW5nLk1vdXNlQnV0dG9uFy5QYW5lbC5JbWFnZUJldmVsLldpZHRoEi5QYW5lbC5CZXZlbC5PdXRlchUuUGFuZWwuU2hhZG93LlZpc2libGUSLlBhbmVsLkJydXNoLkNvbG9yEi5MZWdlbmQuQ2hlY2tCb3hlcxEuTGVnZW5kLkFsaWdubWVudBcuTGVnZW5kLlRpdGxlLkZvbnQuQm9sZCEuTGVnZW5kLlRpdGxlLkZvbnQuU2hhZG93LlZpc2libGUcLkxlZ2VuZC5UaXRsZS5TaGFkb3cuVmlzaWJsZRkuTGVnZW5kLlRpdGxlLlBlbi5WaXNpYmxlGy5MZWdlbmQuRm9udC5TaGFkb3cuVmlzaWJsZRYuTGVnZW5kLlNoYWRvdy5WaXNpYmxlEy5MZWdlbmQuVHJhbnNwYXJlbnQNLkhlYWRlci5MaW5lcxEuSGVhZGVyLkZvbnQuTmFtZREuSGVhZGVyLkZvbnQuU2l6ZRsuSGVhZGVyLkZvbnQuU2hhZG93LlZpc2libGUWLkhlYWRlci5TaGFkb3cuVmlzaWJsZR4uU3ViSGVhZGVyLkZvbnQuU2hhZG93LlZpc2libGUZLlN1YkhlYWRlci5TaGFkb3cuVmlzaWJsZRsuRm9vdGVyLkZvbnQuU2hhZG93LlZpc2libGUWLkZvb3Rlci5TaGFkb3cuVmlzaWJsZR4uU3ViRm9vdGVyLkZvbnQuU2hhZG93LlZpc2libGUZLlN1YkZvb3Rlci5TaGFkb3cuVmlzaWJsZRUuQXNwZWN0LlJvdGF0aW9uRmxvYXQWLkFzcGVjdC5FbGV2YXRpb25GbG9hdBkuQXNwZWN0LkNvbG9yUGFsZXR0ZUluZGV4Di5Bc3BlY3QuVmlldzNEFS5HcmFwaGljczNELlBlbi5Db2xvchcuR3JhcGhpY3MzRC5CcnVzaC5Db2xvch8uR3JhcGhpY3MzRC5Gb250LlNoYWRvdy5WaXNpYmxlEy5HcmFwaGljczNELlhDZW50ZXITLkdyYXBoaWNzM0QuWUNlbnRlchkuR3JhcGhpY3MzRC5TbW9vdGhpbmdNb2RlHS5HcmFwaGljczNELlRleHRSZW5kZXJpbmdIaW50Gi5HcmFwaGljczNELlN1cHBvcnRzM0RUZXh0FS5HcmFwaGljczNELkJhY2tDb2xvchUuR3JhcGhpY3MzRC5Vc2VCdWZmZXIcLkdyYXBoaWNzM0QuUm90YXRpb25DZW50ZXIuWBwuR3JhcGhpY3MzRC5Sb3RhdGlvbkNlbnRlci5ZHC5HcmFwaGljczNELlJvdGF0aW9uQ2VudGVyLloIU2VyaWVzLjAVLlNlcmllcy4wLkJydXNoLkNvbG9yGS5TZXJpZXMuMC5Qb2ludGVyLlZpc2libGUXLlNlcmllcy4wLlBvaW50ZXIuU3R5bGUbLlNlcmllcy4wLlBvaW50ZXIuUGVuLkNvbG9yHS5TZXJpZXMuMC5Qb2ludGVyLkJydXNoLkNvbG9yFy5TZXJpZXMuMC5MaW5lUGVuLkNvbG9yFy5TZXJpZXMuMC5MaW5lUGVuLldpZHRoFy5TZXJpZXMuMC5MaW5lUGVuLlN0eWxlDy5TZXJpZXMuMC5UaXRsZR4uU2VyaWVzLjAuTWFya3MuQ2FsbG91dC5MZW5ndGghLlNlcmllcy4wLk1hcmtzLkNhbGxvdXQuQXJyb3dIZWFkJS5TZXJpZXMuMC5NYXJrcy5DYWxsb3V0LkFycm93SGVhZFNpemUgLlNlcmllcy4wLk1hcmtzLkNhbGxvdXQuRGlzdGFuY2UeLlNlcmllcy4wLk1hcmtzLkNhbGxvdXQuRHJhdzNEHS5TZXJpZXMuMC5NYXJrcy5DYWxsb3V0LlN0eWxlIy5TZXJpZXMuMC5NYXJrcy5DYWxsb3V0LkJydXNoLkNvbG9yHi5TZXJpZXMuMC5NYXJrcy5JdGVtcy5DYXBhY2l0eSMuU2VyaWVzLjAuTWFya3MuRm9udC5TaGFkb3cuVmlzaWJsZQhTZXJpZXMuMRUuU2VyaWVzLjEuQnJ1c2guQ29sb3IZLlNlcmllcy4xLlBvaW50ZXIuVmlzaWJsZRcuU2VyaWVzLjEuUG9pbnRlci5TdHlsZRsuU2VyaWVzLjEuUG9pbnRlci5QZW4uQ29sb3IdLlNlcmllcy4xLlBvaW50ZXIuQnJ1c2guQ29sb3IXLlNlcmllcy4xLkxpbmVQZW4uQ29sb3IXLlNlcmllcy4xLkxpbmVQZW4uV2lkdGgXLlNlcmllcy4xLkxpbmVQZW4uU3R5bGUSLlNlcmllcy4xLlZlcnRBeGlzDy5TZXJpZXMuMS5UaXRsZR4uU2VyaWVzLjEuTWFya3MuQ2FsbG91dC5MZW5ndGghLlNlcmllcy4xLk1hcmtzLkNhbGxvdXQuQXJyb3dIZWFkJS5TZXJpZXMuMS5NYXJrcy5DYWxsb3V0LkFycm93SGVhZFNpemUgLlNlcmllcy4xLk1hcmtzLkNhbGxvdXQuRGlzdGFuY2UeLlNlcmllcy4xLk1hcmtzLkNhbGxvdXQuRHJhdzNEHS5TZXJpZXMuMS5NYXJrcy5DYWxsb3V0LlN0eWxlIy5TZXJpZXMuMS5NYXJrcy5DYWxsb3V0LkJydXNoLkNvbG9yHi5TZXJpZXMuMS5NYXJrcy5JdGVtcy5DYXBhY2l0eSMuU2VyaWVzLjEuTWFya3MuRm9udC5TaGFkb3cuVmlzaWJsZQhTZXJpZXMuMhUuU2VyaWVzLjIuQnJ1c2guQ29sb3IZLlNlcmllcy4yLlBvaW50ZXIuVmlzaWJsZRcuU2VyaWVzLjIuUG9pbnRlci5TdHlsZRsuU2VyaWVzLjIuUG9pbnRlci5QZW4uQ29sb3IdLlNlcmllcy4yLlBvaW50ZXIuQnJ1c2guQ29sb3IXLlNlcmllcy4yLkxpbmVQZW4uQ29sb3IXLlNlcmllcy4yLkxpbmVQZW4uV2lkdGgPLlNlcmllcy4yLlRpdGxlHi5TZXJpZXMuMi5NYXJrcy5DYWxsb3V0Lkxlbmd0aCEuU2VyaWVzLjIuTWFya3MuQ2FsbG91dC5BcnJvd0hlYWQlLlNlcmllcy4yLk1hcmtzLkNhbGxvdXQuQXJyb3dIZWFkU2l6ZSAuU2VyaWVzLjIuTWFya3MuQ2FsbG91dC5EaXN0YW5jZR4uU2VyaWVzLjIuTWFya3MuQ2FsbG91dC5EcmF3M0QdLlNlcmllcy4yLk1hcmtzLkNhbGxvdXQuU3R5bGUjLlNlcmllcy4yLk1hcmtzLkNhbGxvdXQuQnJ1c2guQ29sb3IeLlNlcmllcy4yLk1hcmtzLkl0ZW1zLkNhcGFjaXR5Iy5TZXJpZXMuMi5NYXJrcy5Gb250LlNoYWRvdy5WaXNpYmxlCFNlcmllcy4zFS5TZXJpZXMuMy5CcnVzaC5Db2xvchkuU2VyaWVzLjMuUG9pbnRlci5WaXNpYmxlFy5TZXJpZXMuMy5Qb2ludGVyLlN0eWxlGy5TZXJpZXMuMy5Qb2ludGVyLlBlbi5Db2xvch0uU2VyaWVzLjMuUG9pbnRlci5CcnVzaC5Db2xvchcuU2VyaWVzLjMuTGluZVBlbi5Db2xvchcuU2VyaWVzLjMuTGluZVBlbi5XaWR0aA8uU2VyaWVzLjMuVGl0bGUeLlNlcmllcy4zLk1hcmtzLkNhbGxvdXQuTGVuZ3RoIS5TZXJpZXMuMy5NYXJrcy5DYWxsb3V0LkFycm93SGVhZCUuU2VyaWVzLjMuTWFya3MuQ2FsbG91dC5BcnJvd0hlYWRTaXplIC5TZXJpZXMuMy5NYXJrcy5DYWxsb3V0LkRpc3RhbmNlHi5TZXJpZXMuMy5NYXJrcy5DYWxsb3V0LkRyYXczRB0uU2VyaWVzLjMuTWFya3MuQ2FsbG91dC5TdHlsZSMuU2VyaWVzLjMuTWFya3MuQ2FsbG91dC5CcnVzaC5Db2xvch4uU2VyaWVzLjMuTWFya3MuSXRlbXMuQ2FwYWNpdHkjLlNlcmllcy4zLk1hcmtzLkZvbnQuU2hhZG93LlZpc2libGUIU2VyaWVzLjQVLlNlcmllcy40LkJydXNoLkNvbG9yGS5TZXJpZXMuNC5Qb2ludGVyLlZpc2libGUXLlNlcmllcy40LlBvaW50ZXIuU3R5bGUbLlNlcmllcy40LlBvaW50ZXIuUGVuLkNvbG9yHS5TZXJpZXMuNC5Qb2ludGVyLkJydXNoLkNvbG9yFy5TZXJpZXMuNC5MaW5lUGVuLkNvbG9yFy5TZXJpZXMuNC5MaW5lUGVuLldpZHRoEi5TZXJpZXMuNC5WZXJ0QXhpcw8uU2VyaWVzLjQuVGl0bGUeLlNlcmllcy40Lk1hcmtzLkNhbGxvdXQuTGVuZ3RoIS5TZXJpZXMuNC5NYXJrcy5DYWxsb3V0LkFycm93SGVhZCUuU2VyaWVzLjQuTWFya3MuQ2FsbG91dC5BcnJvd0hlYWRTaXplIC5TZXJpZXMuNC5NYXJrcy5DYWxsb3V0LkRpc3RhbmNlHi5TZXJpZXMuNC5NYXJrcy5DYWxsb3V0LkRyYXczRB0uU2VyaWVzLjQuTWFya3MuQ2FsbG91dC5TdHlsZSMuU2VyaWVzLjQuTWFya3MuQ2FsbG91dC5CcnVzaC5Db2xvch4uU2VyaWVzLjQuTWFya3MuSXRlbXMuQ2FwYWNpdHkjLlNlcmllcy40Lk1hcmtzLkZvbnQuU2hhZG93LlZpc2libGUIU2VyaWVzLjUVLlNlcmllcy41LkJydXNoLkNvbG9yGS5TZXJpZXMuNS5Qb2ludGVyLlZpc2libGUXLlNlcmllcy41LlBvaW50ZXIuU3R5bGUbLlNlcmllcy41LlBvaW50ZXIuUGVuLkNvbG9yHS5TZXJpZXMuNS5Qb2ludGVyLkJydXNoLkNvbG9yFy5TZXJpZXMuNS5MaW5lUGVuLkNvbG9yFy5TZXJpZXMuNS5MaW5lUGVuLldpZHRoEi5TZXJpZXMuNS5WZXJ0QXhpcw8uU2VyaWVzLjUuVGl0bGUeLlNlcmllcy41Lk1hcmtzLkNhbGxvdXQuTGVuZ3RoIS5TZXJpZXMuNS5NYXJrcy5DYWxsb3V0LkFycm93SGVhZCUuU2VyaWVzLjUuTWFya3MuQ2FsbG91dC5BcnJvd0hlYWRTaXplIC5TZXJpZXMuNS5NYXJrcy5DYWxsb3V0LkRpc3RhbmNlHi5TZXJpZXMuNS5NYXJrcy5DYWxsb3V0LkRyYXczRB0uU2VyaWVzLjUuTWFya3MuQ2FsbG91dC5TdHlsZSMuU2VyaWVzLjUuTWFya3MuQ2FsbG91dC5CcnVzaC5Db2xvch4uU2VyaWVzLjUuTWFya3MuSXRlbXMuQ2FwYWNpdHkjLlNlcmllcy41Lk1hcmtzLkZvbnQuU2hhZG93LlZpc2libGUULldhbGxzLkxlZnQuQXV0b0hpZGUaLldhbGxzLkxlZnQuU2hhZG93LlZpc2libGUVLldhbGxzLlJpZ2h0LkF1dG9IaWRlGy5XYWxscy5SaWdodC5TaGFkb3cuVmlzaWJsZRQuV2FsbHMuQmFjay5BdXRvSGlkZRouV2FsbHMuQmFjay5TaGFkb3cuVmlzaWJsZRYuV2FsbHMuQm90dG9tLkF1dG9IaWRlHC5XYWxscy5Cb3R0b20uU2hhZG93LlZpc2libGUOLldhbGxzLlZpc2libGUcLkF4ZXMuTGVmdC5MYWJlbHMuU2VwYXJhdGlvbh0uQXhlcy5MZWZ0LkxhYmVscy5WYWx1ZUZvcm1hdBsuQXhlcy5MZWZ0LkxhYmVscy5Gb250Lk5hbWUbLkF4ZXMuTGVmdC5MYWJlbHMuRm9udC5TaXplJS5BeGVzLkxlZnQuTGFiZWxzLkZvbnQuU2hhZG93LlZpc2libGUgLkF4ZXMuTGVmdC5MYWJlbHMuU2hhZG93LlZpc2libGUULkF4ZXMuTGVmdC5BdXRvbWF0aWMYLkF4ZXMuTGVmdC5BeGlzUGVuLldpZHRoGS5BeGVzLkxlZnQuQXhpc1Blbi5FbmRDYXAVLkF4ZXMuTGVmdC5HcmlkLlN0eWxlGS5BeGVzLkxlZnQuR3JpZC5aUG9zaXRpb24XLkF4ZXMuTGVmdC5HcmlkLlZpc2libGUYLkF4ZXMuTGVmdC5NYXhpbXVtT2Zmc2V0HS5BeGVzLkxlZnQuTWlub3JUaWNrcy5WaXNpYmxlFi5BeGVzLkxlZnQuVGlja3MuQ29sb3IWLkF4ZXMuTGVmdC5UaXRsZS5MaW5lcxouQXhlcy5MZWZ0LlRpdGxlLkZvbnQuTmFtZRouQXhlcy5MZWZ0LlRpdGxlLkZvbnQuU2l6ZSguQXhlcy5MZWZ0LlRpdGxlLkZvbnQuU2hhZG93LkJydXNoLkNvbG9yJC5BeGVzLkxlZnQuVGl0bGUuRm9udC5TaGFkb3cuVmlzaWJsZSEuQXhlcy5MZWZ0LlRpdGxlLkZvbnQuQnJ1c2guQ29sb3IfLkF4ZXMuTGVmdC5UaXRsZS5TaGFkb3cuVmlzaWJsZRsuQXhlcy5Ub3AuTGFiZWxzLlNlcGFyYXRpb24cLkF4ZXMuVG9wLkxhYmVscy5WYWx1ZUZvcm1hdBouQXhlcy5Ub3AuTGFiZWxzLkZvbnQuTmFtZRouQXhlcy5Ub3AuTGFiZWxzLkZvbnQuU2l6ZSQuQXhlcy5Ub3AuTGFiZWxzLkZvbnQuU2hhZG93LlZpc2libGUfLkF4ZXMuVG9wLkxhYmVscy5TaGFkb3cuVmlzaWJsZRMuQXhlcy5Ub3AuQXV0b21hdGljFy5BeGVzLlRvcC5BeGlzUGVuLldpZHRoGC5BeGVzLlRvcC5BeGlzUGVuLkVuZENhcBQuQXhlcy5Ub3AuR3JpZC5TdHlsZRguQXhlcy5Ub3AuR3JpZC5aUG9zaXRpb24WLkF4ZXMuVG9wLkdyaWQuVmlzaWJsZRwuQXhlcy5Ub3AuTWlub3JUaWNrcy5WaXNpYmxlFS5BeGVzLlRvcC5UaWNrcy5Db2xvchkuQXhlcy5Ub3AuVGl0bGUuRm9udC5OYW1lGS5BeGVzLlRvcC5UaXRsZS5Gb250LlNpemUjLkF4ZXMuVG9wLlRpdGxlLkZvbnQuU2hhZG93LlZpc2libGUgLkF4ZXMuVG9wLlRpdGxlLkZvbnQuQnJ1c2guQ29sb3IeLkF4ZXMuVG9wLlRpdGxlLlNoYWRvdy5WaXNpYmxlES5BeGVzLlRvcC5WaXNpYmxlHS5BeGVzLlJpZ2h0LkxhYmVscy5TZXBhcmF0aW9uHi5BeGVzLlJpZ2h0LkxhYmVscy5WYWx1ZUZvcm1hdBwuQXhlcy5SaWdodC5MYWJlbHMuRm9udC5OYW1lHC5BeGVzLlJpZ2h0LkxhYmVscy5Gb250LlNpemUmLkF4ZXMuUmlnaHQuTGFiZWxzLkZvbnQuU2hhZG93LlZpc2libGUhLkF4ZXMuUmlnaHQuTGFiZWxzLlNoYWRvdy5WaXNpYmxlFS5BeGVzLlJpZ2h0LkF1dG9tYXRpYxkuQXhlcy5SaWdodC5BeGlzUGVuLldpZHRoGi5BeGVzLlJpZ2h0LkF4aXNQZW4uRW5kQ2FwFi5BeGVzLlJpZ2h0LkdyaWQuU3R5bGUaLkF4ZXMuUmlnaHQuR3JpZC5aUG9zaXRpb24YLkF4ZXMuUmlnaHQuR3JpZC5WaXNpYmxlHi5BeGVzLlJpZ2h0Lk1pbm9yVGlja3MuVmlzaWJsZRcuQXhlcy5SaWdodC5UaWNrcy5Db2xvchcuQXhlcy5SaWdodC5UaXRsZS5MaW5lcxsuQXhlcy5SaWdodC5UaXRsZS5Gb250Lk5hbWUbLkF4ZXMuUmlnaHQuVGl0bGUuRm9udC5TaXplJS5BeGVzLlJpZ2h0LlRpdGxlLkZvbnQuU2hhZG93LlZpc2libGUiLkF4ZXMuUmlnaHQuVGl0bGUuRm9udC5CcnVzaC5Db2xvciAuQXhlcy5SaWdodC5UaXRsZS5TaGFkb3cuVmlzaWJsZR4uQXhlcy5Cb3R0b20uTGFiZWxzLlNlcGFyYXRpb24iLkF4ZXMuQm90dG9tLkxhYmVscy5EYXRlVGltZUZvcm1hdB8uQXhlcy5Cb3R0b20uTGFiZWxzLlZhbHVlRm9ybWF0HS5BeGVzLkJvdHRvbS5MYWJlbHMuRm9udC5OYW1lHS5BeGVzLkJvdHRvbS5MYWJlbHMuRm9udC5TaXplJy5BeGVzLkJvdHRvbS5MYWJlbHMuRm9udC5TaGFkb3cuVmlzaWJsZSIuQXhlcy5Cb3R0b20uTGFiZWxzLlNoYWRvdy5WaXNpYmxlHS5BeGVzLkJvdHRvbS5BdXRvbWF0aWNNYXhpbXVtHS5BeGVzLkJvdHRvbS5BdXRvbWF0aWNNaW5pbXVtGi5BeGVzLkJvdHRvbS5BeGlzUGVuLldpZHRoGy5BeGVzLkJvdHRvbS5BeGlzUGVuLkVuZENhcBcuQXhlcy5Cb3R0b20uR3JpZC5TdHlsZRsuQXhlcy5Cb3R0b20uR3JpZC5aUG9zaXRpb24ZLkF4ZXMuQm90dG9tLkdyaWQuVmlzaWJsZRouQXhlcy5Cb3R0b20uTWF4aW11bU9mZnNldBQuQXhlcy5Cb3R0b20uTWF4aW11bRQuQXhlcy5Cb3R0b20uTWluaW11bRouQXhlcy5Cb3R0b20uTWluaW11bU9mZnNldB8uQXhlcy5Cb3R0b20uTWlub3JUaWNrcy5WaXNpYmxlGC5BeGVzLkJvdHRvbS5UaWNrcy5Db2xvchguQXhlcy5Cb3R0b20uVGl0bGUuTGluZXMcLkF4ZXMuQm90dG9tLlRpdGxlLkZvbnQuTmFtZRwuQXhlcy5Cb3R0b20uVGl0bGUuRm9udC5TaXplJi5BeGVzLkJvdHRvbS5UaXRsZS5Gb250LlNoYWRvdy5WaXNpYmxlIy5BeGVzLkJvdHRvbS5UaXRsZS5Gb250LkJydXNoLkNvbG9yIS5BeGVzLkJvdHRvbS5UaXRsZS5TaGFkb3cuVmlzaWJsZSkuQXhlcy5EZXB0aFRvcC5MYWJlbHMuRm9udC5TaGFkb3cuVmlzaWJsZSQuQXhlcy5EZXB0aFRvcC5MYWJlbHMuU2hhZG93LlZpc2libGUYLkF4ZXMuRGVwdGhUb3AuQXV0b21hdGljGS5BeGVzLkRlcHRoVG9wLkdyaWQuU3R5bGUdLkF4ZXMuRGVwdGhUb3AuR3JpZC5aUG9zaXRpb24oLkF4ZXMuRGVwdGhUb3AuVGl0bGUuRm9udC5TaGFkb3cuVmlzaWJsZSMuQXhlcy5EZXB0aFRvcC5UaXRsZS5TaGFkb3cuVmlzaWJsZSYuQXhlcy5EZXB0aC5MYWJlbHMuRm9udC5TaGFkb3cuVmlzaWJsZSEuQXhlcy5EZXB0aC5MYWJlbHMuU2hhZG93LlZpc2libGUVLkF4ZXMuRGVwdGguQXV0b21hdGljFi5BeGVzLkRlcHRoLkdyaWQuU3R5bGUaLkF4ZXMuRGVwdGguR3JpZC5aUG9zaXRpb24lLkF4ZXMuRGVwdGguVGl0bGUuRm9udC5TaGFkb3cuVmlzaWJsZSAuQXhlcy5EZXB0aC5UaXRsZS5TaGFkb3cuVmlzaWJsZQAAAAAEAAQABAAEAAAAAAAAAAYBAAAAAAAAAAAAAAAAAAQEAAAABAQABAAAAAABBAAEBAQEAAQBAAQAAAAEBAAAAQQABAQEBAAEBAEABAAAAAQEAAABBAAEBAQEAAEABAAAAAQEAAABBAAEBAQEAAEABAAAAAQEAAABBAAEBAQEAAQBAAQAAAAEBAAAAQQABAQEBAAEAQAEAAAABAQAAAAAAAAAAAAAAAABAQAAAAAABAQAAAAABAYBAAQABAAAAQEAAAAAAAQEAAAABAEAAAQAAAABAQAAAAAABAQAAAAEBgEAAAQAAAEBAQAAAAAAAAQEAAAAAAAAAAQGAQAABAAAAAAEAAAAAAAABAAAAAgIAQghU3lzdGVtLldpbmRvd3MuRm9ybXMuTW91c2VCdXR0b25zAwAAAAgjU3RlZW1hLlRlZUNoYXJ0LkRyYXdpbmcuQmV2ZWxTdHlsZXMCAAAAARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABIFN0ZWVtYS5UZWVDaGFydC5MZWdlbmRBbGlnbm1lbnRzAgAAAAEBAQEBAQEIAQEBAQEBAQEGBggBFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABCAgmU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELlNtb290aGluZ01vZGUEAAAAJVN5c3RlbS5EcmF3aW5nLlRleHQuVGV4dFJlbmRlcmluZ0hpbnQEAAAAARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABCAgIFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAEkU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5Qb2ludGVyU3R5bGVzAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAgiU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkRhc2hTdHlsZQQAAAAIJlN0ZWVtYS5UZWVDaGFydC5TdHlsZXMuQXJyb3dIZWFkU3R5bGVzAgAAAAgIASRTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLlBvaW50ZXJTdHlsZXMCAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAgBFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAEkU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5Qb2ludGVyU3R5bGVzAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAgiU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkRhc2hTdHlsZQQAAAAjU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5WZXJ0aWNhbEF4aXMCAAAACCZTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLkFycm93SGVhZFN0eWxlcwIAAAAICAEkU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5Qb2ludGVyU3R5bGVzAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAIARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABJFN0ZWVtYS5UZWVDaGFydC5TdHlsZXMuUG9pbnRlclN0eWxlcwIAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAICCZTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLkFycm93SGVhZFN0eWxlcwIAAAAICAEkU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5Qb2ludGVyU3R5bGVzAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAIARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABJFN0ZWVtYS5UZWVDaGFydC5TdHlsZXMuUG9pbnRlclN0eWxlcwIAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAICCZTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLkFycm93SGVhZFN0eWxlcwIAAAAICAEkU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5Qb2ludGVyU3R5bGVzAgAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAIARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABJFN0ZWVtYS5UZWVDaGFydC5TdHlsZXMuUG9pbnRlclN0eWxlcwIAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAII1N0ZWVtYS5UZWVDaGFydC5TdHlsZXMuVmVydGljYWxBeGlzAgAAAAgmU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5BcnJvd0hlYWRTdHlsZXMCAAAACAgBJFN0ZWVtYS5UZWVDaGFydC5TdHlsZXMuUG9pbnRlclN0eWxlcwIAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAACAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAAASRTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLlBvaW50ZXJTdHlsZXMCAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAACCNTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLlZlcnRpY2FsQXhpcwIAAAAIJlN0ZWVtYS5UZWVDaGFydC5TdHlsZXMuQXJyb3dIZWFkU3R5bGVzAgAAAAgIASRTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLlBvaW50ZXJTdHlsZXMCAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAgBAQEBAQEBAQEBCAgBAQEIIFN5c3RlbS5EcmF3aW5nLkRyYXdpbmcyRC5MaW5lQ2FwBAAAACJTeXN0ZW0uRHJhd2luZy5EcmF3aW5nMkQuRGFzaFN0eWxlBAAAAAYBCAEUU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAACBRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAEICAEBAQggU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkxpbmVDYXAEAAAAIlN5c3RlbS5EcmF3aW5nLkRyYXdpbmcyRC5EYXNoU3R5bGUEAAAABgEBFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAgBFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAEBCAgBAQEIIFN5c3RlbS5EcmF3aW5nLkRyYXdpbmcyRC5MaW5lQ2FwBAAAACJTeXN0ZW0uRHJhd2luZy5EcmF3aW5nMkQuRGFzaFN0eWxlBAAAAAYBARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAIARRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAABCAgBAQEBCCBTeXN0ZW0uRHJhd2luZy5EcmF3aW5nMkQuTGluZUNhcAQAAAAiU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkRhc2hTdHlsZQQAAAAGAQgGBggBFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAgBFFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAAEBAQEiU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkRhc2hTdHlsZQQAAAAGAQEBAQEiU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkRhc2hTdHlsZQQAAAAGAQECAAAAiwUAAJcDAAABBAAAAAX7////IVN5c3RlbS5XaW5kb3dzLkZvcm1zLk1vdXNlQnV0dG9ucwEAAAAHdmFsdWVfXwAIAwAAAAAAQAABAAAABfr///8jU3RlZW1hLlRlZUNoYXJ0LkRyYXdpbmcuQmV2ZWxTdHlsZXMBAAAAB3ZhbHVlX18ACAIAAAAAAAAAAAX5////FFN5c3RlbS5EcmF3aW5nLkNvbG9yBAAAAARuYW1lBXZhbHVlCmtub3duQ29sb3IFc3RhdGUBAAAACQcHBAAAAAr/////AAAAAAAAAgABBfj///8gU3RlZW1hLlRlZUNoYXJ0LkxlZ2VuZEFsaWdubWVudHMBAAAAB3ZhbHVlX18ACAIAAAADAAAAAQAAAAAAAQkJAAAABgoAAAAGVGFob21hDAAAAAAAAAAAAAAAAAAAAACQdUAAAAAAAJB1QAMAAAAAAfX////5////CgAAAAAAAAAApAABAAH0////+f///woAAAAAAAAAACUAAQAAvwIAAKoBAAAF8////yZTeXN0ZW0uRHJhd2luZy5EcmF3aW5nMkQuU21vb3RoaW5nTW9kZQEAAAAHdmFsdWVfXwAIBAAAAAEAAAAF8v///yVTeXN0ZW0uRHJhd2luZy5UZXh0LlRleHRSZW5kZXJpbmdIaW50AQAAAAd2YWx1ZV9fAAgEAAAAAAAAAAAB8f////n///8KAAAAAAAAAAAlAAEAAQAAAAAAAAAAAAAAAAYQAAAAG1N0ZWVtYS5UZWVDaGFydC5TdHlsZXMuTGluZQHv////+f///woAAAAAAAAAACUAAQABBe7///8kU3RlZW1hLlRlZUNoYXJ0LlN0eWxlcy5Qb2ludGVyU3R5bGVzAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAHt////+f///woAAAAAAAAAAKQAAQAB7P////n///8KAAAAAAAAAAAlAAEAAev////5////CpkAAP8AAAAAAAACAAIAAAAF6v///yJTeXN0ZW0uRHJhd2luZy5EcmF3aW5nMkQuRGFzaFN0eWxlAQAAAAd2YWx1ZV9fAAgEAAAAAgAAAAYXAAAAKlBsb3QsIGRtX2RhaWx5X2hhcnZlc3QsSXJyaWc0UGFkZG9ja3MgcGFkMAoAAAAF6P///yZTdGVlbWEuVGVlQ2hhcnQuU3R5bGVzLkFycm93SGVhZFN0eWxlcwEAAAAHdmFsdWVfXwAIAgAAAAAAAAAIAAAAAAAAAAAB5////+7///8AAAAAAeb////5////CgAAAAAAAAAAIwABAAAAAAAACRAAAAAB5P////n///8KAAAAAAAAAACNAAEAAQHj////7v///wEAAAAB4v////n///8KAAAAAAAAAACkAAEAAeH////5////CgAAAAAAAAAAjQABAAHg////+f///woAAJn/AAAAAAAAAgACAAAAAd/////q////AgAAAAXe////I1N0ZWVtYS5UZWVDaGFydC5TdHlsZXMuVmVydGljYWxBeGlzAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAYjAAAANVBsb3QsIEN1bXVsYXRpdmUgZG1fZGFpbHlfaGFydmVzdCxJcnJpZzRQYWRkb2NrcyBwYWQwCgAAAAHc////6P///wAAAAAIAAAAAAAAAAAB2////+7///8AAAAAAdr////5////CgAAAAAAAAAAIwABAAAAAAAACRAAAAAB2P////n///8KAAAAAAAAAAAlAAEAAQHX////7v///wEAAAAB1v////n///8KAAAAAAAAAACkAAEAAdX////5////CgAAAAAAAAAAJQABAAHU////+f///wqZAAD/AAAAAAAAAgACAAAABi0AAAAnT2JzZXJ2ZWQsIGRtX2hhcnZlc3QsV2luY2hNZWFzdXJlczkwXzJrCgAAAAHS////6P///wAAAAAIAAAAAAAAAAAB0f///+7///8AAAAAAdD////5////CgAAAAAAAAAAIwABAAAAAAAACRAAAAABzv////n///8KAAAAAAAAAACNAAEAAQHN////7v///wEAAAABzP////n///8KAAAAAAAAAACkAAEAAcv////5////CgAAAAAAAAAAjQABAAHK////+f///woAAJn/AAAAAAAAAgACAAAABjcAAAAoT2JzZXJ2ZWQsIGRtX2hhcnZlc3QzLFdpbmNoTWVhc3VyZXM5MF8yawoAAAAByP///+j///8AAAAACAAAAAAAAAAAAcf////u////AAAAAAHG////+f///woAAAAAAAAAACMAAQAAAAAAAAkQAAAAAcT////5////CgAAAAAAAAAATwABAAEBw////+7///8BAAAAAcL////5////CgAAAAAAAAAApAABAAHB////+f///woAAAAAAAAAAE8AAQABwP////n///8KAE0A/wAAAAAAAAIAAgAAAAG/////3v///wEAAAAGQgAAADJPYnNlcnZlZCwgQ3VtdWxhdGl2ZSBkbV9oYXJ2ZXN0LFdpbmNoTWVhc3VyZXM5MF8yawoAAAABvf///+j///8AAAAACAAAAAAAAAAAAbz////u////AAAAAAG7////+f///woAAAAAAAAAACMAAQAAAAAAAAkQAAAAAbn////5////CgAAAAAAAAAAfwABAAEBuP///+7///8BAAAAAbf////5////CgAAAAAAAAAApAABAAG2////+f///woAAAAAAAAAAH8AAQABtf////n///8KAGOZ/wAAAAAAAAIAAgAAAAG0////3v///wEAAAAGTQAAADNPYnNlcnZlZCwgQ3VtdWxhdGl2ZSBkbV9oYXJ2ZXN0MyxXaW5jaE1lYXN1cmVzOTBfMmsKAAAAAbL////o////AAAAAAgAAAAAAAAAAAGx////7v///wAAAAABsP////n///8KAAAAAAAAAAAjAAEAAAAAAAAAAAAAAAAAAABQAAAABlEAAAAIIyMjMC4jIyMJCgAAAAkAAAAAAAEBAAAABa3///8gU3lzdGVtLkRyYXdpbmcuRHJhd2luZzJELkxpbmVDYXABAAAAB3ZhbHVlX18ACAQAAAACAAAAAaz////q////AQAAAAAAAAAAAAAAAAoAAAAAAav////5////CgAAAP8AAAAAAAACAAlWAAAACQoAAAALAAAAAaj////5////CsAAAP8AAAAAAAACAAABp/////n///8K/wAA/wAAAAAAAAIAAFAAAAAJUQAAAAkKAAAACQAAAAAAAQEAAAABpP///63///8CAAAAAaP////q////AQAAAAAAAAAAAAAAAAABov////n///8KAAAA/wAAAAAAAAIACQoAAAALAAAAAAGh////+f///wr/AAD/AAAAAAAAAgAAAFAAAAAJUQAAAAkKAAAACQAAAAAAAQEAAAABnv///63///8CAAAAAZ3////q////AQAAAAAAAAAAAAAAAAABnP////n///8KAAAA/wAAAAAAAAIACWUAAAAJCgAAAAsAAAAAAZn////5////Cv8AAP8AAAAAAAACAABQAAAABmgAAAAJZC9NTS95eXl5CVEAAAAJCgAAAAkAAAAAAAAAAQAAAAGV////rf///wIAAAABlP///+r///8BAAAAAAAAAAAAAAAACgAAAAAAAACAA+JAAAAAAEAN4EAKAAAAAAGT////+f///woAAAD/AAAAAAAAAgAJbgAAAAkKAAAACwAAAAABkP////n///8K/wAA/wAAAAAAAAIAAAAAAQGP////6v///wEAAAAAAAAAAAAAAAAAAAABAY7////q////AQAAAAAAAAAAAAAAAAARCQAAAAEAAAAGcwAAAAARVgAAAAEAAAAJcwAAABFlAAAAAQAAAAlzAAAAEW4AAAABAAAACXMAAAAL</Format>
+          <Legend>
+            <CheckedTitles>Cumulative,  WaterBalanceCumulative</CheckedTitles>
+            <CheckedTitles>Daily,  WaterBalanceToday</CheckedTitles>
+          </Legend>
+          <Plot name="Cumulative">
+            <SeriesType>Solid line</SeriesType>
+            <PointType>None</PointType>
+            <colour>
+            </colour>
+            <X>Date</X>
+            <Y>WaterBalanceCumulative</Y>
+            <GDApsimFileReader name="ApsimFileReader" />
+          </Plot>
+          <Plot name="Daily">
+            <SeriesType>Solid line</SeriesType>
+            <PointType>Cross</PointType>
+            <colour>
+            </colour>
+            <X>Date</X>
+            <Y>WaterBalanceToday</Y>
+            <GDApsimFileReader name="ApsimFileReader" />
+          </Plot>
+          <Plot name="swdep">
+            <SeriesType>Solid line</SeriesType>
+            <PointType>None</PointType>
+            <colour>
+            </colour>
+            <X>Date</X>
+            <YRight>sw_dep()</YRight>
+            <GDApsimFileReader name="ApsimFileReader" />
+          </Plot>
+          <Plot name="drain">
+            <SeriesType>Solid line</SeriesType>
+            <PointType>None</PointType>
+            <colour>
+            </colour>
+            <X>Date</X>
+            <Y>drain</Y>
+            <GDApsimFileReader name="ApsimFileReader" />
+          </Plot>
+          <Plot name="es">
+            <SeriesType>Solid line</SeriesType>
+            <PointType>None</PointType>
+            <colour>
+            </colour>
+            <X>Date</X>
+            <Y>es</Y>
+            <GDApsimFileReader name="ApsimFileReader" />
+          </Plot>
+        </Graph>
+      </outputfile>
+    </area>
+  </simulation>
+</folder>
